@@ -184,13 +184,13 @@
             
             <div class="input-group">
                 <label for="processes">Processes (one per line: pid, arrival, execution, deadline)</label>
-                <textarea id="processes" placeholder="0, 0, 25, 150
-1, 20, 95, 200
-2, 55, 45, 160
-3, 80, 15, 120">0, 0, 25, 150
-1, 20, 95, 200
-2, 55, 45, 160
-3, 80, 15, 120</textarea>
+                <textarea id="processes" placeholder="0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0">0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0</textarea>
                 <div class="help-text">Format: pid, arrival_time, execution_time, deadline (deadline optional)</div>
             </div>
             
@@ -475,10 +475,10 @@
         }
 
         function loadExample() {
-            document.getElementById('processes').value = `0, 0, 25, 150
-1, 20, 95, 200
-2, 55, 45, 160
-3, 80, 15, 120`;
+            document.getElementById('processes').value = `0, 0, 20, 110
+1, 20, 55, 50
+2, 50, 85, 180
+3, 85, 10, 100`;
             document.getElementById('timeSlice').value = '20';
             document.getElementById('contextSwitch').value = '5';
         }
